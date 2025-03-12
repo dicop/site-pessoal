@@ -8,12 +8,17 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="js/theme.js" defer></script>
-    <script src="js/carousel.js" defer></script>
+    <script src="js/scroll.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/scroll-to-top.js" defer></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">portfolio</a>
+            <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
             <div class="nav-menu">
                 <a href="#home">Home</a>
                 <a href="#career">Sobre</a>
@@ -42,27 +47,67 @@
 
     <section id="career" class="career">
         <div class="container">
-            <h2>Carreira</h2>
-            <div class="career-content">
-                <p>Trabalho com desenvolvimento de sistemas há mais de 14 anos, comecei desenvolvendo pequenas aplicações web usando PHP e após dois anos passei a desenvolver em Java, usando tecnologias como JSP, JDBC, Servlet, CSS, Javascript e HTML.</p>
-                
-                <p>Com o passar do tempo fui me aprofundando no mundo Java, trabalhando com diversos frameworks, como por exemplo: Spring, Struts, JPA, EJB, JSF, JAX-RS, JAX-WS, iReport, entre outros. Dentro das principais ferramentas e tecnologias utilizadas estão: Banco de dados Oracle, Servidor de Aplicação Weblogic, Jenkins e Git.</p>
-                
-                <p>Em minha carreira como desenvolvedor passei também a desenvolver aplicativos para celulares baseados em Android, utilizando Java. Há 4 anos atrás, com a ascenção de tecnologias hibridas, passei a trabalhar também com Flutter, linguagem multiplataforma que permite desenvolver aplicativos para Android e IOS.</p>
-                
-                <p>Participei/participo do desenvolvimento de sistemas dos mais variados tipos, integrações com órgãos fiscais (NF-e, CT-e e MDF-e), integrações com outros sistemas baseados em webservices (SOAP/ REST), sistemas corporativos tradicionais, ferramenta para geração de relatórios / indicadores de BI, painéis de acompanhamento de processos internos, aplicativos nativos android e aplicativos multiplataforma em flutter.</p>
-                
-                <p>Durante todo esse período me formei em sistemas de informação, fiz duas certificações Java e diversos cursos voltados para Java e desenvolvimento Mobile (Android / Flutter).</p>
-                                
-                <p>Atualmente as principais tecnologias que utilizo são: SQL, JPA, EJB, JSF (Primefaces), iReport, JAX-RS, Android (Java) e Flutter.</p>
+            <h2 class="reveal">Carreira</h2>
+            
+            <div class="career-stats reveal">
+                <div class="stat-item delay-1">
+                    <div class="stat-number">14+</div>
+                    <div class="stat-label">Anos de Experiência</div>
+                </div>
+                <div class="stat-item delay-2">
+                    <div class="stat-number">16</div>
+                    <div class="stat-label">Anos na Bertolini</div>
+                </div>
+                <div class="stat-item delay-3">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Certificações Java</div>
+                </div>
+            </div>
+
+            <div class="career-grid">
+                <div class="career-highlight reveal-left">
+                    <h3><i class="fas fa-code"></i>Desenvolvimento Web</h3>
+                    <p>Especializado em desenvolvimento Java com ampla experiência em frameworks como Spring, Struts, JSF e tecnologias como JSP, JDBC e Servlets. Proficiente em desenvolvimento frontend com HTML, CSS e JavaScript.</p>
+                </div>
+                <div class="career-highlight reveal-right">
+                    <h3><i class="fas fa-mobile-alt"></i>Desenvolvimento Mobile</h3>
+                    <p>Experiência em desenvolvimento de aplicativos Android nativos com Java e aplicações multiplataforma com Flutter, criando soluções móveis inovadoras e eficientes.</p>
+                </div>
+                <div class="career-highlight reveal-left delay-1">
+                    <h3><i class="fas fa-database"></i>Banco de Dados & Backend</h3>
+                    <p>Profundo conhecimento em Oracle Database, JPA, EJB e integração com diversos sistemas através de webservices SOAP/REST. Experiência com ferramentas de relatórios como iReport.</p>
+                </div>
+                <div class="career-highlight reveal-right delay-1">
+                    <h3><i class="fas fa-tools"></i>DevOps & Ferramentas</h3>
+                    <p>Experiência com servidor de aplicação Weblogic, integração contínua com Jenkins, controle de versão com Git e desenvolvimento de integrações com órgãos fiscais.</p>
+                </div>
+            </div>
+
+            <div class="career-timeline reveal">
+                <h3>Trajetória Profissional</h3>
+                <div class="timeline-item delay-1">
+                    <div class="timeline-date">2008 - Presente</div>
+                    <div class="timeline-title">Desenvolvedor - Transportes Bertolini</div>
+                    <div class="timeline-description">Desenvolvimento e manutenção de sistemas corporativos, aplicativos mobile e integrações com órgãos fiscais.</div>
+                </div>
+                <div class="timeline-item delay-2">
+                    <div class="timeline-date">2006 - 2008</div>
+                    <div class="timeline-title">Suporte Técnico - Transportes Bertolini</div>
+                    <div class="timeline-description">Suporte aos usuários e sistemas da empresa, contribuindo para a eficiência operacional.</div>
+                </div>
+                <div class="timeline-item delay-3">
+                    <div class="timeline-date">Formação</div>
+                    <div class="timeline-title">Sistemas de Informação</div>
+                    <div class="timeline-description">Graduação completa com foco em desenvolvimento de software e sistemas empresariais.</div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Tecnologias</h2>
-            <div class="skills-grid">
+            <h2 class="reveal">Tecnologias</h2>
+            <div class="skills-grid reveal">
                 <div class="skill-card">
                     <div class="skill-icon">
                         <i class="fab fa-java"></i>
@@ -258,253 +303,235 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2>Projetos</h2>
-            <div class="carousel">
-                <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>Sistema Empresarial</h3>
-                        <p>Sistema completo de gestão empresarial com integrações fiscais e módulos personalizáveis para diferentes setores.</p>
-                        <div class="project-techs">
-                            <span>Java</span>
-                            <span>Spring</span>
-                            <span>Oracle</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>App de Delivery</h3>
-                        <p>Aplicativo mobile para entrega de produtos com rastreamento em tempo real e sistema de avaliação.</p>
-                        <div class="project-techs">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>Google Maps</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>E-commerce Platform</h3>
-                        <p>Plataforma completa de e-commerce com sistema de pagamentos, gestão de estoque e analytics.</p>
-                        <div class="project-techs">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>Sistema de BI</h3>
-                        <p>Dashboard interativo para análise de dados empresariais com geração de relatórios automatizados.</p>
-                        <div class="project-techs">
-                            <span>Python</span>
-                            <span>Django</span>
-                            <span>PostgreSQL</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>App de Finanças</h3>
-                        <p>Aplicativo para controle financeiro pessoal com análise de gastos e planejamento orçamentário.</p>
-                        <div class="project-techs">
-                            <span>Kotlin</span>
-                            <span>Room DB</span>
-                            <span>Material Design</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>CRM Inteligente</h3>
-                        <p>Sistema de gestão de relacionamento com cliente utilizando IA para previsão de vendas.</p>
-                        <div class="project-techs">
-                            <span>Vue.js</span>
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>Plataforma de Ensino</h3>
-                        <p>Sistema de educação à distância com suporte a aulas ao vivo, exercícios interativos e análise de desempenho.</p>
-                        <div class="project-techs">
-                            <span>Next.js</span>
-                            <span>WebRTC</span>
-                            <span>GraphQL</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>App de Saúde</h3>
-                        <p>Aplicativo para monitoramento de saúde com integração a dispositivos wearables e recomendações personalizadas.</p>
-                        <div class="project-techs">
-                            <span>Swift</span>
-                            <span>HealthKit</span>
-                            <span>CoreML</span>
-                        </div>
-                    </article>
-                    <article class="project-card">
-                        <h3>Sistema IoT Industrial</h3>
-                        <p>Plataforma de monitoramento em tempo real para equipamentos industriais com alertas preditivos.</p>
-                        <div class="project-techs">
-                            <span>Rust</span>
-                            <span>MQTT</span>
-                            <span>TimescaleDB</span>
-                        </div>
-                    </article>
-                </div>
-                <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+            <h2 class="reveal">Projetos</h2>
+            <div class="projects-grid reveal">
+                <article class="project-card">
+                    <h3>Sistema Empresarial</h3>
+                    <p>Sistema completo de gestão empresarial com integrações fiscais e módulos personalizáveis para diferentes setores.</p>
+                    <div class="project-techs">
+                        <span>Java</span>
+                        <span>Spring</span>
+                        <span>Oracle</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>App de Delivery</h3>
+                    <p>Aplicativo mobile para entrega de produtos com rastreamento em tempo real e sistema de avaliação.</p>
+                    <div class="project-techs">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Google Maps</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>E-commerce Platform</h3>
+                    <p>Plataforma completa de e-commerce com sistema de pagamentos, gestão de estoque e analytics.</p>
+                    <div class="project-techs">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>Sistema de BI</h3>
+                    <p>Dashboard interativo para análise de dados empresariais com geração de relatórios automatizados.</p>
+                    <div class="project-techs">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>App de Finanças</h3>
+                    <p>Aplicativo para controle financeiro pessoal com análise de gastos e planejamento orçamentário.</p>
+                    <div class="project-techs">
+                        <span>Kotlin</span>
+                        <span>Room DB</span>
+                        <span>Material Design</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>CRM Inteligente</h3>
+                    <p>Sistema de gestão de relacionamento com cliente utilizando IA para previsão de vendas.</p>
+                    <div class="project-techs">
+                        <span>Vue.js</span>
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>Plataforma de Ensino</h3>
+                    <p>Sistema de educação à distância com suporte a aulas ao vivo, exercícios interativos e análise de desempenho.</p>
+                    <div class="project-techs">
+                        <span>Next.js</span>
+                        <span>WebRTC</span>
+                        <span>GraphQL</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>App de Saúde</h3>
+                    <p>Aplicativo para monitoramento de saúde com integração a dispositivos wearables e recomendações personalizadas.</p>
+                    <div class="project-techs">
+                        <span>Swift</span>
+                        <span>HealthKit</span>
+                        <span>CoreML</span>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>Sistema IoT Industrial</h3>
+                    <p>Plataforma de monitoramento em tempo real para equipamentos industriais com alertas preditivos.</p>
+                    <div class="project-techs">
+                        <span>Rust</span>
+                        <span>MQTT</span>
+                        <span>TimescaleDB</span>
+                    </div>
+                </article>
             </div>
-            <div class="carousel-dots"></div>
         </div>
     </section>
 
     <section id="opensource" class="projects opensource">
         <div class="container">
-            <h2>Código livre</h2>
-            <div class="carousel">
-                <button class="carousel-btn prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>Biblioteca de Componentes</h3>
-                        <p>Conjunto de componentes reutilizáveis para desenvolvimento web com foco em acessibilidade e performance.</p>
-                        <div class="project-techs">
-                            <span>React</span>
-                            <span>TypeScript</span>
-                            <span>Storybook</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/react-components" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>CLI para DevOps</h3>
-                        <p>Ferramenta de linha de comando para automatizar tarefas comuns de DevOps e deploy de aplicações.</p>
-                        <div class="project-techs">
-                            <span>Python</span>
-                            <span>Click</span>
-                            <span>Docker</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/devops-cli" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>Framework MVC</h3>
-                        <p>Framework MVC leve e modular para desenvolvimento rápido de aplicações web em Java.</p>
-                        <div class="project-techs">
-                            <span>Java</span>
-                            <span>Reflection</span>
-                            <span>Annotations</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/java-mvc" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>Plugin VSCode</h3>
-                        <p>Extensão para VSCode que adiciona suporte a preview em tempo real para documentação técnica.</p>
-                        <div class="project-techs">
-                            <span>TypeScript</span>
-                            <span>VSCode API</span>
-                            <span>Markdown</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/vscode-docs-preview" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>Gerador de API</h3>
-                        <p>Ferramenta que gera código boilerplate para APIs RESTful baseado em especificações OpenAPI.</p>
-                        <div class="project-techs">
-                            <span>Node.js</span>
-                            <span>OpenAPI</span>
-                            <span>Handlebars</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/api-generator" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>Widget Flutter</h3>
-                        <p>Biblioteca de widgets personalizados para Flutter com temas dinâmicos e animações fluidas.</p>
-                        <div class="project-techs">
-                            <span>Flutter</span>
-                            <span>Dart</span>
-                            <span>Animation</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/flutter-widgets" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>ORM Java</h3>
-                        <p>ORM leve e flexível para Java com suporte a múltiplos bancos de dados e cache em memória.</p>
-                        <div class="project-techs">
-                            <span>Java</span>
-                            <span>JDBC</span>
-                            <span>Cache</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/java-orm" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>Template Android</h3>
-                        <p>Template para projetos Android com arquitetura MVVM, injeção de dependência e testes automatizados.</p>
-                        <div class="project-techs">
-                            <span>Kotlin</span>
-                            <span>MVVM</span>
-                            <span>Dagger</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/android-template" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                    <article class="project-card">
-                        <h3>Logger Distribuído</h3>
-                        <p>Sistema de logging distribuído com agregação em tempo real e dashboard de monitoramento.</p>
-                        <div class="project-techs">
-                            <span>Go</span>
-                            <span>gRPC</span>
-                            <span>Prometheus</span>
-                        </div>
-                        <a href="https://github.com/diogocopat/distributed-logger" class="project-link">
-                            <i class="fab fa-github"></i>
-                            Ver código fonte
-                        </a>
-                    </article>
-                </div>
-                <button class="carousel-btn next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+            <h2 class="reveal">Código livre</h2>
+            <div class="projects-grid reveal">
+                <article class="project-card reveal delay-1">
+                    <h3>Biblioteca de Componentes</h3>
+                    <p>Conjunto de componentes reutilizáveis para desenvolvimento web com foco em acessibilidade e performance.</p>
+                    <div class="project-techs">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Storybook</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/react-components" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-1">
+                    <h3>CLI para DevOps</h3>
+                    <p>Ferramenta de linha de comando para automatizar tarefas comuns de DevOps e deploy de aplicações.</p>
+                    <div class="project-techs">
+                        <span>Python</span>
+                        <span>Click</span>
+                        <span>Docker</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/devops-cli" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-2">
+                    <h3>Framework MVC</h3>
+                    <p>Framework MVC leve e modular para desenvolvimento rápido de aplicações web em Java.</p>
+                    <div class="project-techs">
+                        <span>Java</span>
+                        <span>Reflection</span>
+                        <span>Annotations</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/java-mvc" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-2">
+                    <h3>Plugin VSCode</h3>
+                    <p>Extensão para VSCode que adiciona suporte a preview em tempo real para documentação técnica.</p>
+                    <div class="project-techs">
+                        <span>TypeScript</span>
+                        <span>VSCode API</span>
+                        <span>Markdown</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/vscode-docs-preview" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-3">
+                    <h3>Gerador de API</h3>
+                    <p>Ferramenta que gera código boilerplate para APIs RESTful baseado em especificações OpenAPI.</p>
+                    <div class="project-techs">
+                        <span>Node.js</span>
+                        <span>OpenAPI</span>
+                        <span>Handlebars</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/api-generator" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-3">
+                    <h3>Widget Flutter</h3>
+                    <p>Biblioteca de widgets personalizados para Flutter com temas dinâmicos e animações fluidas.</p>
+                    <div class="project-techs">
+                        <span>Flutter</span>
+                        <span>Dart</span>
+                        <span>Animation</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/flutter-widgets" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-4">
+                    <h3>ORM Java</h3>
+                    <p>ORM leve e flexível para Java com suporte a múltiplos bancos de dados e cache em memória.</p>
+                    <div class="project-techs">
+                        <span>Java</span>
+                        <span>JDBC</span>
+                        <span>Cache</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/java-orm" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-4">
+                    <h3>Template Android</h3>
+                    <p>Template para projetos Android com arquitetura MVVM, injeção de dependência e testes automatizados.</p>
+                    <div class="project-techs">
+                        <span>Kotlin</span>
+                        <span>MVVM</span>
+                        <span>Dagger</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/android-template" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
+                <article class="project-card reveal delay-5">
+                    <h3>Logger Distribuído</h3>
+                    <p>Sistema de logging distribuído com agregação em tempo real e dashboard de monitoramento.</p>
+                    <div class="project-techs">
+                        <span>Go</span>
+                        <span>gRPC</span>
+                        <span>Prometheus</span>
+                    </div>
+                    <a href="https://github.com/diogocopat/distributed-logger" class="project-link">
+                        <i class="fab fa-github"></i>
+                        Ver código fonte
+                    </a>
+                </article>
             </div>
-            <div class="carousel-dots"></div>
         </div>
     </section>
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contato</h2>
-            <form class="contact-form">
-                <div class="form-group">
+            <h2 class="reveal">Contato</h2>
+            <form class="contact-form reveal">
+                <div class="form-group reveal delay-1">
                     <input type="text" id="name" required>
                     <label for="name">Nome</label>
                 </div>
-                <div class="form-group">
+                <div class="form-group reveal delay-2">
                     <input type="email" id="email" required>
                     <label for="email">Email</label>
                 </div>
-                <div class="form-group">
+                <div class="form-group reveal delay-3">
                     <textarea id="message" required></textarea>
                     <label for="message">Mensagem</label>
                 </div>
-                <button type="submit" class="btn">Enviar</button>
+                <button type="submit" class="btn reveal">Enviar</button>
             </form>
         </div>
     </section>
