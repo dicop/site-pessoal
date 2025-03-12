@@ -61,10 +61,21 @@ body {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary);
+    height: 45%;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+}
+
+.logo img.theme-logo {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    content: url("../img/logo-tema-claro.webp");
+}
+
+[data-theme="dark"] .logo img.theme-logo {
+    content: url("../img/logo-tema-escuro.webp");
 }
 
 .nav-menu {
@@ -377,6 +388,14 @@ h2 {
     h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
+    }
+
+    .navbar {
+        height: 70px;
+    }
+
+    .logo {
+        height: 50%;
     }
 }
 
