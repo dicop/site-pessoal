@@ -269,7 +269,7 @@ h2 {
 
 /* Projects Section */
 .projects {
-    padding: 60px 0;
+    padding: 60px 0 80px;
     background: var(--background);
     position: relative;
     width: 100%;
@@ -285,6 +285,7 @@ h2 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
     width: 100%;
+    padding-bottom: 8px;
 }
 
 .project-card {
@@ -385,7 +386,7 @@ h2 {
     }
     
     .projects {
-        padding: 60px 0;
+        padding: 60px 0 80px;
     }
 
     .project-card {
