@@ -4,8 +4,8 @@ const icon = themeToggle.querySelector('i');
 // Update copyright year
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Check for saved theme preference or default to light
-const theme = localStorage.getItem('theme') || 'light';
+// Check for saved theme preference or default to dark
+const theme = localStorage.getItem('theme') || 'dark';
 document.documentElement.setAttribute('data-theme', theme);
 updateIcon(theme);
 
