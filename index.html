@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/translations.js"></script>
     <script src="js/theme.js" defer></script>
     <script src="js/scroll.js" defer></script>
     <script src="js/menu.js" defer></script>
@@ -19,15 +20,18 @@
                 <img class="theme-logo" alt="Logo Portfolio">
             </a>
             <div class="nav-menu">
-                <a href="#home" style="--item-index: 0">Home</a>
-                <a href="#career" style="--item-index: 1">Sobre</a>
-                <a href="#skills" style="--item-index: 2">Tecnologias</a>
-                <a href="#projects" style="--item-index: 3">Projetos</a>
-                <a href="#opensource" style="--item-index: 4">Código Livre</a>
-                <a href="#contact" class="nav-btn" style="--item-index: 5">Contato</a>
+                <a href="#home" style="--item-index: 0" data-i18n="nav-home">Home</a>
+                <a href="#career" style="--item-index: 1" data-i18n="nav-about">Sobre</a>
+                <a href="#skills" style="--item-index: 2" data-i18n="nav-skills">Tecnologias</a>
+                <a href="#projects" style="--item-index: 3" data-i18n="nav-projects">Projetos</a>
+                <a href="#opensource" style="--item-index: 4" data-i18n="nav-opensource">Código Livre</a>
+                <a href="#contact" class="nav-btn" style="--item-index: 5" data-i18n="nav-contact">Contato</a>
             </div>
             <div class="nav-right">
-                <button id="themeToggle" class="theme-toggle">
+                <button id="langToggle" class="lang-toggle" aria-label="Alternar idioma">
+                    EN
+                </button>
+                <button id="themeToggle" class="theme-toggle" aria-label="Alternar tema">
                     <i class="fas fa-moon"></i>
                 </button>
                 <button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">
@@ -39,79 +43,82 @@
 
     <section id="home" class="hero">
         <div class="container">
-            <span class="subtitle">Desenvolvedor Java e Mobile</span>
-            <h1>Olá, eu sou<br>Diogo Copat</h1>
-            <p>14+ anos criando soluções digitais inovadoras</p>
+            <span class="subtitle" data-i18n="hero-subtitle">Desenvolvedor Java e Mobile</span>
+            <h1>
+                <span class="typing-text" data-i18n="hero-title-1">Olá, eu sou</span><br>
+                <span class="typing-name" data-i18n="hero-title-2">Diogo Copat</span>
+            </h1>
+            <p data-i18n="hero-description">14+ anos criando soluções digitais inovadoras</p>
             <div class="hero-btns">
-                <a href="#projects" class="btn">Ver Projetos</a>
-                <a href="#contact" class="btn btn-outline">Contato</a>
+                <a href="#projects" class="btn" data-i18n="hero-btn-projects">Ver Projetos</a>
+                <a href="#contact" class="btn btn-outline" data-i18n="hero-btn-contact">Contato</a>
             </div>
         </div>
     </section>
 
     <section id="career" class="career">
         <div class="container">
-            <h2 class="reveal">Sobre</h2>
-            <p class="section-description reveal">
+            <h2 class="reveal" data-i18n="career-title">Sobre</h2>
+            <p class="section-description reveal" data-i18n="career-description">
                 Olá! Sou um desenvolvedor <strong>apaixonado por inovação</strong> e eternamente curioso por novas tecnologias. Quando não estou codando, você me encontra explorando as últimas novidades em <strong>IA</strong> (sim, sou daqueles que conversa com ChatGPT nas horas vagas 🤖), mergulhando no universo das <strong>criptomoedas</strong> ou acompanhando o mercado financeiro como um verdadeiro entusiasta. Para equilibrar tantas horas na frente do computador, mantenho minha energia alta com <strong>musculação e corrida</strong> - afinal, desenvolvedor fit também existe! 🏃‍♂️ Em casa, sou o orgulhoso pai de <strong>três filhas de quatro patas</strong> que são minhas companheiras de código e café. ☕🐕
             </p>
-            <p class="section-description reveal">
+            <p class="section-description reveal" data-i18n="career-description-2">
                 Logo abaixo você encontrará mais detalhes sobre minha <strong>trajetória profissional</strong> e as tecnologias que fazem parte do meu dia a dia como desenvolvedor. Prepare-se para conhecer um pouco mais sobre minhas aventuras no mundo do desenvolvimento de software! 💻
             </p>
             <div class="career-stats reveal">
                 <div class="stat-item delay-2">
                     <div class="stat-number">20+</div>
-                    <div class="stat-label">Anos atuando na área de TI</div>
+                    <div class="stat-label" data-i18n="career-stats-1">Anos atuando na área de TI</div>
                 </div>
                 <div class="stat-item delay-1">
                     <div class="stat-number">14+</div>
-                    <div class="stat-label">Anos desenvolvendo sistemas</div>
+                    <div class="stat-label" data-i18n="career-stats-2">Anos desenvolvendo sistemas</div>
                 </div>
                 <div class="stat-item delay-3">
                     <div class="stat-number">1</div>
-                    <div class="stat-label">Formação em Sistemas de Informação</div>
+                    <div class="stat-label" data-i18n="career-stats-3">Formação em Sistemas de Informação</div>
                 </div>                
                 <div class="stat-item delay-3">
                     <div class="stat-number">2</div>
-                    <div class="stat-label">Certificações Oracle / Java</div>
+                    <div class="stat-label" data-i18n="career-stats-4">Certificações Oracle / Java</div>
                 </div>
             </div>
 
             <div class="career-grid">
                 <div class="career-highlight reveal-left">
-                    <h3><i class="fas fa-code"></i>Desenvolvimento Web</h3>
-                    <p>Especializado em desenvolvimento Java com ampla experiência em frameworks como Spring, Struts, JSF e tecnologias como JSP, JDBC e Servlets. Proficiente em desenvolvimento frontend com HTML, CSS e JavaScript.</p>
+                    <h3><i class="fas fa-code"></i><span data-i18n="career-web-title">Desenvolvimento Web</span></h3>
+                    <p data-i18n="career-web-desc">Especializado em desenvolvimento Java com ampla experiência em frameworks como Spring, Struts, JSF e tecnologias como JSP, JDBC e Servlets. Proficiente em desenvolvimento frontend com HTML, CSS e JavaScript.</p>
                 </div>
                 <div class="career-highlight reveal-right">
-                    <h3><i class="fas fa-mobile-alt"></i>Desenvolvimento Mobile</h3>
-                    <p>Experiência em desenvolvimento de aplicativos Android nativos com Java e aplicações multiplataforma com Flutter, criando soluções móveis inovadoras e eficientes.</p>
+                    <h3><i class="fas fa-mobile-alt"></i><span data-i18n="career-mobile-title">Desenvolvimento Mobile</span></h3>
+                    <p data-i18n="career-mobile-desc">Experiência em desenvolvimento de aplicativos Android nativos com Java e aplicações multiplataforma com Flutter, criando soluções móveis inovadoras e eficientes.</p>
                 </div>
                 <div class="career-highlight reveal-left delay-1">
-                    <h3><i class="fas fa-database"></i>Banco de Dados & Backend</h3>
-                    <p>Profundo conhecimento em Oracle Database, JPA, EJB e integração com diversos sistemas através de webservices SOAP/REST. Experiência com ferramentas de relatórios como iReport.</p>
+                    <h3><i class="fas fa-database"></i><span data-i18n="career-db-title">Banco de Dados & Backend</span></h3>
+                    <p data-i18n="career-db-desc">Profundo conhecimento em Oracle Database, JPA, EJB e integração com diversos sistemas através de webservices SOAP/REST. Experiência com ferramentas de relatórios como iReport.</p>
                 </div>
                 <div class="career-highlight reveal-right delay-1">
-                    <h3><i class="fas fa-tools"></i>DevOps & Ferramentas</h3>
-                    <p>Experiência com servidor de aplicação Weblogic, integração contínua com Jenkins, controle de versão com Git e desenvolvimento de integrações com órgãos fiscais.</p>
+                    <h3><i class="fas fa-tools"></i><span data-i18n="career-devops-title">DevOps & Ferramentas</span></h3>
+                    <p data-i18n="career-devops-desc">Experiência com servidor de aplicação Weblogic, integração contínua com Jenkins, controle de versão com Git e desenvolvimento de integrações com órgãos fiscais.</p>
                 </div>
             </div>
 
             <div class="career-timeline reveal">
-                <h3>Trajetória Profissional</h3>
+                <h3 data-i18n="career-timeline-title">Trajetória Profissional</h3>
                 <div class="timeline-item delay-1">
-                    <div class="timeline-date">2008 - Presente</div>
-                    <div class="timeline-title">Desenvolvedor - Transportes Bertolini</div>
-                    <div class="timeline-description">Desenvolvimento e manutenção de sistemas corporativos, aplicativos mobile e integrações com órgãos fiscais.</div>
+                    <div class="timeline-date" data-i18n="career-timeline-1-date">2008 - Presente</div>
+                    <div class="timeline-title" data-i18n="career-timeline-1-title">Desenvolvedor - Transportes Bertolini</div>
+                    <div class="timeline-description" data-i18n="career-timeline-1-desc">Desenvolvimento e manutenção de sistemas corporativos, aplicativos mobile e integrações com órgãos fiscais.</div>
                 </div>
                 <div class="timeline-item delay-2">
-                    <div class="timeline-date">2006 - 2008</div>
-                    <div class="timeline-title">Suporte Técnico - Transportes Bertolini</div>
-                    <div class="timeline-description">Suporte aos usuários e sistemas da empresa, contribuindo para a eficiência operacional.</div>
+                    <div class="timeline-date" data-i18n="career-timeline-2-date">2006 - 2008</div>
+                    <div class="timeline-title" data-i18n="career-timeline-2-title">Suporte Técnico - Transportes Bertolini</div>
+                    <div class="timeline-description" data-i18n="career-timeline-2-desc">Suporte aos usuários e sistemas da empresa, contribuindo para a eficiência operacional.</div>
                 </div>
                 <div class="timeline-item delay-3">
-                    <div class="timeline-date">Formação</div>
-                    <div class="timeline-title">Sistemas de Informação</div>
-                    <div class="timeline-description">Graduação completa com foco em desenvolvimento de software e sistemas empresariais.</div>
+                    <div class="timeline-date" data-i18n="career-timeline-3-date">Formação</div>
+                    <div class="timeline-title" data-i18n="career-timeline-3-title">Sistemas de Informação</div>
+                    <div class="timeline-description" data-i18n="career-timeline-3-desc">Graduação completa com foco em desenvolvimento de software e sistemas empresariais.</div>
                 </div>
             </div>
         </div>
@@ -119,8 +126,8 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="reveal">Tecnologias</h2>
-            <p class="section-description reveal">
+            <h2 class="reveal" data-i18n="skills-title">Tecnologias</h2>
+            <p class="section-description reveal" data-i18n="skills-description">
                 Com mais de <strong>14 anos de experiência</strong> em desenvolvimento, domino um amplo conjunto de tecnologias e ferramentas. Minha expertise abrange desde <strong>desenvolvimento backend</strong> com Java e seus frameworks até <strong>desenvolvimento mobile</strong> com Android e Flutter, passando por <strong>bancos de dados</strong>, <strong>DevOps</strong> e <strong>integrações</strong>. Este conjunto diversificado de habilidades me permite criar soluções completas e robustas.
             </p>
             <div class="skills-grid reveal">
@@ -130,7 +137,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Java</h3>
-                        <p>Desenvolvimento backend e Android</p>
+                        <p data-i18n="tech-java-desc">Desenvolvimento backend e Android</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -139,7 +146,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Spring</h3>
-                        <p>Framework web e microsserviços</p>
+                        <p data-i18n="tech-spring-desc">Framework web e microsserviços</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -148,7 +155,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>JSP</h3>
-                        <p>Templates web Java</p>
+                        <p data-i18n="tech-jsp-desc">Templates web Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -157,7 +164,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>JDBC</h3>
-                        <p>Conexão com banco de dados</p>
+                        <p data-i18n="tech-jdbc-desc">Conexão com banco de dados</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -166,7 +173,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Servlet</h3>
-                        <p>Aplicações web Java</p>
+                        <p data-i18n="tech-servlet-desc">Aplicações web Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -175,7 +182,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>HTML</h3>
-                        <p>Estruturação de páginas web</p>
+                        <p data-i18n="tech-html-desc">Estruturação de páginas web</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -184,7 +191,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>CSS</h3>
-                        <p>Estilização e layouts responsivos</p>
+                        <p data-i18n="tech-css-desc">Estilização e layouts responsivos</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -193,7 +200,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>JavaScript</h3>
-                        <p>Interatividade frontend</p>
+                        <p data-i18n="tech-js-desc">Interatividade frontend</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -202,7 +209,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Struts</h3>
-                        <p>Framework MVC Java</p>
+                        <p data-i18n="tech-struts-desc">Framework MVC Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -211,7 +218,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>JPA</h3>
-                        <p>Persistência de dados Java</p>
+                        <p data-i18n="tech-jpa-desc">Persistência de dados Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -220,7 +227,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>EJB</h3>
-                        <p>Componentes empresariais Java</p>
+                        <p data-i18n="tech-ejb-desc">Componentes empresariais Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -229,7 +236,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>JSF</h3>
-                        <p>Framework web Java</p>
+                        <p data-i18n="tech-jsf-desc">Framework web Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -238,7 +245,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>JAX-RS</h3>
-                        <p>APIs REST em Java</p>
+                        <p data-i18n="tech-jaxrs-desc">APIs REST em Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -247,7 +254,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>JAX-WS</h3>
-                        <p>Web Services SOAP</p>
+                        <p data-i18n="tech-jaxws-desc">Web Services SOAP</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -256,7 +263,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>iReport</h3>
-                        <p>Geração de relatórios</p>
+                        <p data-i18n="tech-ireport-desc">Geração de relatórios</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -265,7 +272,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Oracle</h3>
-                        <p>Banco de dados empresarial</p>
+                        <p data-i18n="tech-oracle-desc">Banco de dados empresarial</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -274,7 +281,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Weblogic</h3>
-                        <p>Servidor de aplicação Java</p>
+                        <p data-i18n="tech-weblogic-desc">Servidor de aplicação Java</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -283,7 +290,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Jenkins</h3>
-                        <p>Integração contínua</p>
+                        <p data-i18n="tech-jenkins-desc">Integração contínua</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -292,7 +299,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Git</h3>
-                        <p>Controle de versão</p>
+                        <p data-i18n="tech-git-desc">Controle de versão</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -301,7 +308,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Android</h3>
-                        <p>Desenvolvimento mobile nativo</p>
+                        <p data-i18n="tech-android-desc">Desenvolvimento mobile nativo</p>
                     </div>
                 </div>
                 <div class="skill-card">
@@ -310,7 +317,7 @@
                     </div>
                     <div class="skill-info">
                         <h3>Flutter</h3>
-                        <p>Apps multiplataforma</p>
+                        <p data-i18n="tech-flutter-desc">Apps multiplataforma</p>
                     </div>
                 </div>
             </div>
@@ -319,14 +326,14 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="reveal">Projetos</h2>
-            <p class="section-description reveal">
+            <h2 class="reveal" data-i18n="projects-title">Projetos</h2>
+            <p class="section-description reveal" data-i18n="projects-description">
                 Durante minha trajetória de <strong>14+ anos como desenvolvedor</strong>, tive a oportunidade de liderar e contribuir com diversos projetos significativos. Aqui estão alguns dos mais relevantes, demonstrando minha experiência em criar soluções inovadoras e impactantes.
             </p>
             <div class="projects-grid reveal">
                 <article class="project-card">
-                    <h3>Sistema Empresarial</h3>
-                    <p>Sistema completo de gestão empresarial com integrações fiscais e módulos personalizáveis para diferentes setores.</p>
+                    <h3 data-i18n="project-1-title">Sistema Empresarial</h3>
+                    <p data-i18n="project-1-desc">Sistema completo de gestão empresarial com integrações fiscais e módulos personalizáveis para diferentes setores.</p>
                     <div class="project-techs">
                         <span>Java</span>
                         <span>Spring</span>
@@ -334,8 +341,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>App de Delivery</h3>
-                    <p>Aplicativo mobile para entrega de produtos com rastreamento em tempo real e sistema de avaliação.</p>
+                    <h3 data-i18n="project-2-title">App de Delivery</h3>
+                    <p data-i18n="project-2-desc">Aplicativo mobile para entrega de produtos com rastreamento em tempo real e sistema de avaliação.</p>
                     <div class="project-techs">
                         <span>Flutter</span>
                         <span>Firebase</span>
@@ -343,8 +350,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>E-commerce Platform</h3>
-                    <p>Plataforma completa de e-commerce com sistema de pagamentos, gestão de estoque e analytics.</p>
+                    <h3 data-i18n="project-3-title">E-commerce Platform</h3>
+                    <p data-i18n="project-3-desc">Plataforma completa de e-commerce com sistema de pagamentos, gestão de estoque e analytics.</p>
                     <div class="project-techs">
                         <span>React</span>
                         <span>Node.js</span>
@@ -352,8 +359,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>Sistema de BI</h3>
-                    <p>Dashboard interativo para análise de dados empresariais com geração de relatórios automatizados.</p>
+                    <h3 data-i18n="project-4-title">Sistema de BI</h3>
+                    <p data-i18n="project-4-desc">Dashboard interativo para análise de dados empresariais com geração de relatórios automatizados.</p>
                     <div class="project-techs">
                         <span>Python</span>
                         <span>Django</span>
@@ -361,8 +368,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>App de Finanças</h3>
-                    <p>Aplicativo para controle financeiro pessoal com análise de gastos e planejamento orçamentário.</p>
+                    <h3 data-i18n="project-5-title">App de Finanças</h3>
+                    <p data-i18n="project-5-desc">Aplicativo para controle financeiro pessoal com análise de gastos e planejamento orçamentário.</p>
                     <div class="project-techs">
                         <span>Kotlin</span>
                         <span>Room DB</span>
@@ -370,8 +377,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>CRM Inteligente</h3>
-                    <p>Sistema de gestão de relacionamento com cliente utilizando IA para previsão de vendas.</p>
+                    <h3 data-i18n="project-6-title">CRM Inteligente</h3>
+                    <p data-i18n="project-6-desc">Sistema de gestão de relacionamento com cliente utilizando IA para previsão de vendas.</p>
                     <div class="project-techs">
                         <span>Vue.js</span>
                         <span>Python</span>
@@ -379,8 +386,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>Plataforma de Ensino</h3>
-                    <p>Sistema de educação à distância com suporte a aulas ao vivo, exercícios interativos e análise de desempenho.</p>
+                    <h3 data-i18n="project-7-title">Plataforma de Ensino</h3>
+                    <p data-i18n="project-7-desc">Sistema de educação à distância com suporte a aulas ao vivo, exercícios interativos e análise de desempenho.</p>
                     <div class="project-techs">
                         <span>Next.js</span>
                         <span>WebRTC</span>
@@ -388,8 +395,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>App de Saúde</h3>
-                    <p>Aplicativo para monitoramento de saúde com integração a dispositivos wearables e recomendações personalizadas.</p>
+                    <h3 data-i18n="project-8-title">App de Saúde</h3>
+                    <p data-i18n="project-8-desc">Aplicativo para monitoramento de saúde com integração a dispositivos wearables e recomendações personalizadas.</p>
                     <div class="project-techs">
                         <span>Swift</span>
                         <span>HealthKit</span>
@@ -397,8 +404,8 @@
                     </div>
                 </article>
                 <article class="project-card">
-                    <h3>Sistema IoT Industrial</h3>
-                    <p>Plataforma de monitoramento em tempo real para equipamentos industriais com alertas preditivos.</p>
+                    <h3 data-i18n="project-9-title">Sistema IoT Industrial</h3>
+                    <p data-i18n="project-9-desc">Plataforma de monitoramento em tempo real para equipamentos industriais com alertas preditivos.</p>
                     <div class="project-techs">
                         <span>Rust</span>
                         <span>MQTT</span>
@@ -411,14 +418,14 @@
 
     <section id="opensource" class="projects opensource">
         <div class="container">
-            <h2 class="reveal">Código livre</h2>
-            <p class="section-description reveal">
+            <h2 class="reveal" data-i18n="opensource-title">Código livre</h2>
+            <p class="section-description reveal" data-i18n="opensource-description">
                 Esta seção apresenta uma seleção dos meus <strong>projetos de código aberto</strong>, permitindo uma análise mais profunda do meu trabalho como desenvolvedor. Aqui você pode explorar o código fonte, avaliar as <strong>práticas de programação</strong> e as tecnologias utilizadas em cada projeto, demonstrando meu compromisso com a <strong>qualidade</strong> e a <strong>inovação</strong> no desenvolvimento de software.
             </p>
             <div class="projects-grid reveal">
                 <article class="project-card reveal delay-1">
-                    <h3>Biblioteca de Componentes</h3>
-                    <p>Conjunto de componentes reutilizáveis para desenvolvimento web com foco em acessibilidade e performance.</p>
+                    <h3 data-i18n="opensource-project-1-title">Biblioteca de Componentes</h3>
+                    <p data-i18n="opensource-project-1-desc">Conjunto de componentes reutilizáveis para desenvolvimento web com foco em acessibilidade e performance.</p>
                     <div class="project-techs">
                         <span>React</span>
                         <span>TypeScript</span>
@@ -426,12 +433,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/react-components" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-1">
-                    <h3>CLI para DevOps</h3>
-                    <p>Ferramenta de linha de comando para automatizar tarefas comuns de DevOps e deploy de aplicações.</p>
+                    <h3 data-i18n="opensource-project-2-title">CLI para DevOps</h3>
+                    <p data-i18n="opensource-project-2-desc">Ferramenta de linha de comando para automatizar tarefas comuns de DevOps e deploy de aplicações.</p>
                     <div class="project-techs">
                         <span>Python</span>
                         <span>Click</span>
@@ -439,12 +446,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/devops-cli" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-2">
-                    <h3>Framework MVC</h3>
-                    <p>Framework MVC leve e modular para desenvolvimento rápido de aplicações web em Java.</p>
+                    <h3 data-i18n="opensource-project-3-title">Framework MVC</h3>
+                    <p data-i18n="opensource-project-3-desc">Framework MVC leve e modular para desenvolvimento rápido de aplicações web em Java.</p>
                     <div class="project-techs">
                         <span>Java</span>
                         <span>Reflection</span>
@@ -452,12 +459,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/java-mvc" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-2">
-                    <h3>Plugin VSCode</h3>
-                    <p>Extensão para VSCode que adiciona suporte a preview em tempo real para documentação técnica.</p>
+                    <h3 data-i18n="opensource-project-4-title">Plugin VSCode</h3>
+                    <p data-i18n="opensource-project-4-desc">Extensão para VSCode que adiciona suporte a preview em tempo real para documentação técnica.</p>
                     <div class="project-techs">
                         <span>TypeScript</span>
                         <span>VSCode API</span>
@@ -465,12 +472,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/vscode-docs-preview" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-3">
-                    <h3>Gerador de API</h3>
-                    <p>Ferramenta que gera código boilerplate para APIs RESTful baseado em especificações OpenAPI.</p>
+                    <h3 data-i18n="opensource-project-5-title">Gerador de API</h3>
+                    <p data-i18n="opensource-project-5-desc">Ferramenta que gera código boilerplate para APIs RESTful baseado em especificações OpenAPI.</p>
                     <div class="project-techs">
                         <span>Node.js</span>
                         <span>OpenAPI</span>
@@ -478,12 +485,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/api-generator" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-3">
-                    <h3>Widget Flutter</h3>
-                    <p>Biblioteca de widgets personalizados para Flutter com temas dinâmicos e animações fluidas.</p>
+                    <h3 data-i18n="opensource-project-6-title">Widget Flutter</h3>
+                    <p data-i18n="opensource-project-6-desc">Biblioteca de widgets personalizados para Flutter com temas dinâmicos e animações fluidas.</p>
                     <div class="project-techs">
                         <span>Flutter</span>
                         <span>Dart</span>
@@ -491,12 +498,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/flutter-widgets" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-4">
-                    <h3>ORM Java</h3>
-                    <p>ORM leve e flexível para Java com suporte a múltiplos bancos de dados e cache em memória.</p>
+                    <h3 data-i18n="opensource-project-7-title">ORM Java</h3>
+                    <p data-i18n="opensource-project-7-desc">ORM leve e flexível para Java com suporte a múltiplos bancos de dados e cache em memória.</p>
                     <div class="project-techs">
                         <span>Java</span>
                         <span>JDBC</span>
@@ -504,12 +511,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/java-orm" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-4">
-                    <h3>Template Android</h3>
-                    <p>Template para projetos Android com arquitetura MVVM, injeção de dependência e testes automatizados.</p>
+                    <h3 data-i18n="opensource-project-8-title">Template Android</h3>
+                    <p data-i18n="opensource-project-8-desc">Template para projetos Android com arquitetura MVVM, injeção de dependência e testes automatizados.</p>
                     <div class="project-techs">
                         <span>Kotlin</span>
                         <span>MVVM</span>
@@ -517,12 +524,12 @@
                     </div>
                     <a href="https://github.com/diogocopat/android-template" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
                 <article class="project-card reveal delay-5">
-                    <h3>Logger Distribuído</h3>
-                    <p>Sistema de logging distribuído com agregação em tempo real e dashboard de monitoramento.</p>
+                    <h3 data-i18n="opensource-project-9-title">Logger Distribuído</h3>
+                    <p data-i18n="opensource-project-9-desc">Sistema de logging distribuído com agregação em tempo real e dashboard de monitoramento.</p>
                     <div class="project-techs">
                         <span>Go</span>
                         <span>gRPC</span>
@@ -530,7 +537,7 @@
                     </div>
                     <a href="https://github.com/diogocopat/distributed-logger" class="project-link">
                         <i class="fab fa-github"></i>
-                        Ver código fonte
+                        <span data-i18n="opensource-view-source">Ver código fonte</span>
                     </a>
                 </article>
             </div>
@@ -539,24 +546,24 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="reveal">Contato</h2>
-            <p class="section-description reveal">
+            <h2 class="reveal" data-i18n="contact-title">Contato</h2>
+            <p class="section-description reveal" data-i18n="contact-description">
                 Interessado em discutir um projeto ou saber mais sobre meu trabalho? Você pode entrar em contato através do <strong>formulário abaixo</strong> ou me encontrar nas <strong>redes sociais</strong> indicadas no rodapé. Estou sempre aberto a novas oportunidades e parcerias interessantes.
             </p>
-            <form class="contact-form reveal">
-                <div class="form-group reveal delay-1">
+            <form class="contact-form reveal delay-1">
+                <div class="form-group">
                     <input type="text" id="name" required>
-                    <label for="name">Nome</label>
+                    <label for="name" data-i18n="contact-name">Nome</label>
                 </div>
-                <div class="form-group reveal delay-2">
+                <div class="form-group">
                     <input type="email" id="email" required>
-                    <label for="email">Email</label>
+                    <label for="email" data-i18n="contact-email">Email</label>
                 </div>
-                <div class="form-group reveal delay-3">
+                <div class="form-group">
                     <textarea id="message" required></textarea>
-                    <label for="message">Mensagem</label>
+                    <label for="message" data-i18n="contact-message">Mensagem</label>
                 </div>
-                <button type="submit" class="btn reveal">Enviar</button>
+                <button type="submit" class="btn" data-i18n="contact-btn-send">Enviar</button>
             </form>
         </div>
     </section>
@@ -571,7 +578,7 @@
                 <a href="#"><i class="fab fa-linkedin"></i></a>
                 <a href="#"><i class="fas fa-envelope"></i></a>
             </div>
-            <p class="copyright">&copy; <span id="currentYear"></span> Diogo Copat. Todos os direitos reservados.</p>
+            <p class="copyright">&copy; <span id="currentYear"></span> Diogo Copat. <span data-i18n="footer-rights">Todos os direitos reservados</span>.</p>
         </div>
     </footer>
 </body>

@@ -1,1 +1,5 @@
 * incluir uma imagem minha para ficar na seção sobre
+* Criar uma versão em inglês com um language switcher
+* Implementar um efeito de parallax suave no hero section
+* Criar cards com gradientes mais modernos
+* Adicionar um efeito de "typing" no título principal

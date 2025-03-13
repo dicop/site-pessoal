@@ -584,6 +584,23 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Language Toggle Button */
+.lang-toggle {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.lang-toggle:hover {
+    color: var(--primary);
+}
+
 /* Theme Toggle Button */
 .theme-toggle {
     background: none;
@@ -592,12 +609,11 @@ footer {
     font-size: 1.2rem;
     cursor: pointer;
     padding: 0.5rem;
-    margin-left: 1rem;
     transition: color 0.3s ease;
 }
 
 .theme-toggle:hover {
-    color: var(--accent);
+    color: var(--primary);
 }
 
 /* Dark Theme Adjustments */
