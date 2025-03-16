@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Substitua pela sua chave de API da Pexels
     const API_KEY = '2YrzeQ2t0V4BH0gLyvmnIscrttsa2ghgJ327xA2UOLcGrssOyqDp7uh1';
     
+    // Configurar a imagem de perfil local
+    setProfileImageLocal();
+    
     // Mapeamento de projetos para termos de pesquisa na Pexels
     const projectImageQueries = {
         // Projetos principais
@@ -26,6 +29,30 @@ document.addEventListener('DOMContentLoaded', function() {
         'opensource-project-8-title': 'android template mobile',
         'opensource-project-9-title': 'distributed logging system'
     };
+    
+    // Função para configurar a imagem de perfil local
+    function setProfileImageLocal() {
+        const profileImage = document.querySelector('.profile-image');
+        if (profileImage) {
+            // Definir a imagem local
+            profileImage.src = 'img/foto.jpg';
+            
+            // Adicionar evento para tratar erros de carregamento
+            profileImage.onerror = function() {
+                this.src = `https://via.placeholder.com/400x400?text=Profile`;
+                console.error('Erro ao carregar a imagem de perfil local. Usando placeholder.');
+            };
+            
+            // Adicionar evento para remover a animação de carregamento quando a imagem estiver carregada
+            profileImage.onload = function() {
+                const container = this.closest('.profile-image-container');
+                if (container) {
+                    container.style.animation = 'none';
+                    container.style.background = 'none';
+                }
+            };
+        }
+    }
     
     // Função para buscar imagem da Pexels
     async function fetchPexelsImage(query, dataI18nKey) {
