@@ -316,6 +316,8 @@ h2 {
     height: 40px;
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    top: 100px;
+    margin-top: 0;
 }
 
 .skills-swiper .swiper-button-next:after,
@@ -400,16 +402,17 @@ h2 {
 
 .project-card {
     width: 100%;
-    padding: 2rem;
+    padding: 0;
     border-radius: var(--radius);
     background: linear-gradient(135deg, var(--surface) 0%, rgba(var(--primary-rgb), 0.08) 100%);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 300px;
+    min-height: 350px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(var(--primary-rgb), 0.1);
     transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -418,14 +421,84 @@ h2 {
     border-color: rgba(var(--primary-rgb), 0.2);
 }
 
+.project-image-container {
+    position: relative;
+    width: 100%;
+    height: 160px;
+    overflow: hidden;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.project-image[src*="via.placeholder.com"] {
+    opacity: 0.7;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.project-image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.3) 100%);
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-image-container::after {
+    opacity: 0.7;
+}
+
+.project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 .project-card h3 {
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
     color: var(--text);
+    font-size: 1.3rem;
 }
 
 .project-card p {
     margin-bottom: 1rem;
-    color: var(--text-secondary);
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
 }
 
 .project-techs {
@@ -489,7 +562,10 @@ h2 {
 
     .project-card {
         min-height: auto;
-        padding: 1.5rem;
+    }
+    
+    .project-image-container {
+        height: 180px;
     }
     
     h2 {
@@ -516,7 +592,25 @@ h2 {
     }
 
     .project-card {
+        min-height: auto;
+    }
+    
+    .project-image-container {
+        height: 150px;
+    }
+    
+    .project-content {
         padding: 1.25rem;
+    }
+    
+    .project-card h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-card p {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
     }
     
     .project-techs span {
@@ -555,6 +649,10 @@ h2 {
     h2 {
         font-size: 1.8rem;
         margin-bottom: 1.5rem;
+    }
+
+    .project-image {
+        height: 120px;
     }
 }
 
