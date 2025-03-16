@@ -82,7 +82,7 @@ const translations = {
         
         // Contact Section
         'contact-title': 'Contato',
-        'contact-description': 'Interessado em discutir um projeto ou saber mais sobre meu trabalho? Você pode entrar em contato através do <strong>formulário abaixo</strong> ou me encontrar nas <strong>redes sociais</strong> indicadas no rodapé. Estou sempre aberto a novas oportunidades e parcerias interessantes.',
+        'contact-description': 'Interessado em discutir um projeto ou saber mais sobre meu trabalho? Você pode entrar em contato através do <strong>formulário abaixo</strong> ou me encontrar nas <strong>redes sociais</strong> indicadas no rodapé.',
         'contact-name': 'Nome',
         'contact-email': 'Email',
         'contact-message': 'Mensagem',
@@ -217,7 +217,7 @@ const translations = {
         
         // Contact Section
         'contact-title': 'Contact',
-        'contact-description': 'Interested in discussing a project or learning more about my work? You can get in touch through the <strong>form below</strong> or find me on the <strong>social networks</strong> indicated in the footer. I\'m always open to new opportunities and interesting partnerships.',
+        'contact-description': 'Interested in discussing a project or learning more about my work? You can get in touch through the <strong>form below</strong> or find me on the <strong>social networks</strong> indicated in the footer.',
         'contact-name': 'Name',
         'contact-email': 'Email',
         'contact-message': 'Message',

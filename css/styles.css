@@ -244,11 +244,17 @@ h2 {
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
-    padding: 2rem 0;
     width: 100%;
+    padding: 2rem 0;
+}
+
+.skills-swiper {
+    width: 100%;
+    padding: 2rem 0 4rem;
+}
+
+.skills-swiper .swiper-slide {
+    height: auto;
 }
 
 .skill-card {
@@ -259,14 +265,14 @@ h2 {
     align-items: center;
     gap: 1rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
     border: 1px solid rgba(var(--primary-rgb), 0.1);
+    height: 100px;
 }
 
 .skill-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.1);
-    border-color: rgba(var(--primary-rgb), 0.2);
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-color: rgba(var(--primary-rgb), 0.1);
 }
 
 .skill-icon {
@@ -301,15 +307,74 @@ h2 {
     color: var(--text-secondary);
 }
 
-@media (max-width: 768px) {
-    .skills-grid {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 1rem;
+/* Swiper Navigation */
+.skills-swiper .swiper-button-next,
+.skills-swiper .swiper-button-prev {
+    color: var(--primary);
+    background: var(--surface);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-swiper .swiper-button-next:after,
+.skills-swiper .swiper-button-prev:after {
+    font-size: 1.2rem;
+}
+
+.skills-swiper .swiper-button-next:hover,
+.skills-swiper .swiper-button-prev:hover {
+    background: var(--primary);
+    color: var(--background);
+}
+
+/* Swiper Pagination */
+.skills-swiper .swiper-pagination {
+    position: relative;
+    bottom: 0;
+    margin-top: 2rem;
+}
+
+.skills-swiper .swiper-pagination-bullet {
+    background: var(--primary);
+    opacity: 0.5;
+    width: 8px;
+    height: 8px;
+}
+
+.skills-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .skills-swiper {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .skills-swiper {
+        padding: 2rem 1rem;
     }
     
     .skill-card {
         padding: 1.25rem;
     }
+}
+
+/* Dark Theme Adjustments */
+[data-theme="dark"] .skills-swiper .swiper-button-next,
+[data-theme="dark"] .skills-swiper .swiper-button-prev {
+    background: var(--surface);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .skills-swiper .swiper-button-next:hover,
+[data-theme="dark"] .skills-swiper .swiper-button-prev:hover {
+    background: var(--primary);
+    color: var(--background);
 }
 
 /* Projects Section */

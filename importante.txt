@@ -1,4 +1,3 @@
 * incluir uma imagem minha para ficar na seção sobre
-* efeito hover moderno para formulario
 * efeito carrossel para as tecnologias
 
