@@ -8,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mapeamento de projetos para termos de pesquisa na Pexels
     const projectImageQueries = {
         // Projetos principais
-        'project-1-title': 'enterprise system management',
-        'project-2-title': 'delivery app mobile',
-        'project-3-title': 'ecommerce website',
+        'project-1-title': 'enterprise architecture diagram',
+        'project-2-title': 'logistics management mobile app',
+        'project-3-title': 'electronic document management system',
         'project-4-title': 'business intelligence dashboard',
         'project-5-title': 'finance app mobile',
         'project-6-title': 'crm system',
