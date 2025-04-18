@@ -12,13 +12,13 @@ const translations = {
         'hero-subtitle': 'Desenvolvedor Java e Mobile',
         'hero-title-1': 'Olá, eu sou',
         'hero-title-2': 'Diogo Copat',
-        'hero-description': '14+ anos criando soluções digitais inovadoras',
+        'hero-description': '17+ anos criando soluções digitais inovadoras',
         'hero-btn-projects': 'Ver Projetos',
         'hero-btn-contact': 'Contato',
         
         // Career Section
         'career-title': 'Sobre',
-        'career-description': 'Olá! Sou um <strong>Desenvolvedor de Software</strong> com mais de <strong>14 anos</strong> de jornada no mundo da tecnologia, apaixonado por <strong>inovação</strong> e movido por uma curiosidade constante por novas ferramentas e desafios. Minha carreira foi construída sobre uma base sólida em <strong>desenvolvimento Java</strong>, complementada nos últimos anos pela empolgante área de <strong>desenvolvimento mobile</strong>. 💻<br><br>Com vasta experiência no ecossistema Java (<strong>JPA, EJB, JSF/Primefaces, JAX-RS, JAX-WS</strong>...) e ferramentas como <strong>Oracle DB, Weblogic e Git</strong>, participei da criação de diversos tipos de sistemas: desde complexas integrações fiscais (<strong>NF-e, CT-e, MDF-e</strong>) via Webservices (<strong>SOAP/REST</strong>), até sistemas corporativos e ferramentas de <strong>BI</strong>. 🚀<br><br>Há <strong>4 anos</strong>, mergulhei no desenvolvimento mobile, trabalhando com <strong>Android Nativo (Java)</strong> e, mais recentemente, com <strong>Flutter</strong>, para criar aplicações multiplataforma (<strong>iOS/Android</strong>). 📱<br><br>Sou <strong>Graduado em Sistemas de Informação</strong>, possuo <strong>duas certificações Java</strong> e estou sempre aprendendo – seja explorando as novidades em <strong>IA</strong> (sim, converso com o ChatGPT! 🤖), acompanhando o universo <strong>cripto</strong> e o mercado financeiro, ou fazendo cursos na minha área. 📚',
+        'career-description': 'Olá! Sou um <strong>Desenvolvedor de Software</strong> com mais de <strong>17 anos</strong> de jornada no mundo da tecnologia, apaixonado por <strong>inovação</strong> e movido por uma curiosidade constante por novas ferramentas e desafios. Minha carreira foi construída sobre uma base sólida em <strong>desenvolvimento Java</strong>, complementada nos últimos anos pela empolgante área de <strong>desenvolvimento mobile</strong>. 💻<br><br>Com vasta experiência no ecossistema Java (<strong>JPA, EJB, JSF/Primefaces, JAX-RS, JAX-WS</strong>...) e ferramentas como <strong>Oracle DB, Weblogic e Git</strong>, participei da criação de diversos tipos de sistemas: desde complexas integrações fiscais (<strong>NF-e, CT-e, MDF-e</strong>) via Webservices (<strong>SOAP/REST</strong>), até sistemas corporativos e ferramentas de <strong>BI</strong>. 🚀<br><br>Há <strong>5 anos</strong>, mergulhei no desenvolvimento mobile, trabalhando com <strong>Android Nativo (Java)</strong> e, mais recentemente, com <strong>Flutter</strong>, para criar aplicações multiplataforma (<strong>iOS/Android</strong>). 📱<br><br>Sou <strong>Graduado em Sistemas de Informação</strong>, possuo <strong>duas certificações Java</strong> e estou sempre aprendendo – seja explorando as novidades em <strong>IA</strong> (sim, converso com o ChatGPT! 🤖), acompanhando o universo <strong>cripto</strong> e o mercado financeiro, ou fazendo cursos na minha área. 📚',
         'career-description-2': 'Logo abaixo você encontrará mais detalhes sobre minha <strong>trajetória profissional</strong> e as tecnologias que fazem parte do meu dia a dia como desenvolvedor. Prepare-se para conhecer um pouco mais sobre minhas aventuras no mundo do desenvolvimento de software! 💻',
         'career-stats-1': 'Anos atuando na área de TI',
         'career-stats-2': 'Anos desenvolvendo sistemas',
@@ -29,7 +29,7 @@ const translations = {
         'career-web-title': 'Desenvolvimento Java',
         'career-web-desc': 'Especialista em desenvolvimento Java, com ampla experiência em frameworks como EJB, JPA, JSF, Primefaces, JAX-RS, JAX-WS, Spring, Struts, JSP, JDBC e Servlets.',
         'career-mobile-title': 'Desenvolvimento Mobile',
-        'career-mobile-desc': 'Especialista em desenvolvimento de aplicativos Android nativos com Java e aplicações multiplataforma (Android / IOS) com Flutter.',
+        'career-mobile-desc': 'Especialista em desenvolvimento de aplicativos Android nativo (Java) e aplicações multiplataforma (Android / IOS) com Flutter.',
         'career-db-title': 'Banco de Dados & Backend',
         'career-db-desc': 'Profundo conhecimento em Oracle Database, JPA, EJB e integração com diversos sistemas através de webservices SOAP/REST. Experiência com ferramentas de relatórios como iReport.',
         'career-devops-title': 'DevOps & Ferramentas',
@@ -61,11 +61,11 @@ const translations = {
         
         // Skills Section
         'skills-title': 'Tecnologias',
-        'skills-description': 'Com mais de <strong>14 anos de experiência</strong> em desenvolvimento, domino um amplo conjunto de tecnologias e ferramentas. Minha expertise abrange desde <strong>desenvolvimento backend</strong> com Java e seus frameworks até <strong>desenvolvimento mobile</strong> com Android e Flutter, passando por <strong>bancos de dados</strong>, <strong>DevOps</strong> e <strong>integrações</strong>. Este conjunto diversificado de habilidades me permite criar soluções completas e robustas.',
+        'skills-description': 'Com mais de <strong>17 anos de experiência</strong> em desenvolvimento, domino um amplo conjunto de tecnologias e ferramentas. Minha expertise abrange desde <strong>desenvolvimento backend</strong> com Java e seus frameworks até <strong>desenvolvimento mobile</strong> com Android e Flutter, passando por <strong>bancos de dados</strong>, <strong>DevOps</strong> e <strong>integrações</strong>. Este conjunto diversificado de habilidades me permite criar soluções completas e robustas.',
         
         // Projects Section
         'projects-title': 'Projetos',
-        'projects-description': 'Durante minha trajetória de <strong>14+ anos como desenvolvedor</strong>, tive a oportunidade de liderar e contribuir com diversos projetos significativos. Aqui estão alguns dos mais relevantes, demonstrando minha experiência em criar soluções inovadoras e impactantes.',
+        'projects-description': 'Durante minha trajetória de <strong>17+ anos como desenvolvedor</strong>, tive a oportunidade de liderar e contribuir com diversos projetos significativos. Aqui estão alguns dos mais relevantes, demonstrando minha experiência em criar soluções inovadoras e impactantes.',
         
         // Open Source Section
         'opensource-title': 'Código livre',
@@ -159,13 +159,13 @@ const translations = {
         'hero-subtitle': 'Java and Mobile Developer',
         'hero-title-1': 'Hi, I am',
         'hero-title-2': 'Diogo Copat',
-        'hero-description': '14+ years creating innovative digital solutions',
+        'hero-description': '17+ years creating innovative digital solutions',
         'hero-btn-projects': 'View Projects',
         'hero-btn-contact': 'Contact',
         
         // Career Section
         'career-title': 'About',
-        'career-description': 'Hello! I am a <strong>Software Developer</strong> with over <strong>14 years</strong> of journey in the technology world, passionate about <strong>innovation</strong> and driven by a constant curiosity for new tools and challenges. My career has been built on a solid foundation in <strong>Java development</strong>, complemented in recent years by the exciting field of <strong>mobile development</strong>. 💻<br><br>With extensive experience in the Java ecosystem (<strong>JPA, EJB, JSF/Primefaces, JAX-RS, JAX-WS</strong>...) and tools such as <strong>Oracle DB, Weblogic, and Git</strong>, I have participated in the creation of various types of systems: from complex fiscal integrations (<strong>NF-e, CT-e, MDF-e</strong>) via Webservices (<strong>SOAP/REST</strong>), to corporate systems and <strong>BI</strong> tools. 🚀<br><br>For <strong>4 years</strong>, I have immersed myself in mobile development, working with <strong>Native Android (Java)</strong> and, more recently, with <strong>Flutter</strong>, to create cross-platform applications (<strong>iOS/Android</strong>). 📱<br><br>I am <strong>Graduated in Information Systems</strong>, have <strong>two Java certifications</strong>, and I am always learning – whether exploring the latest in <strong>AI</strong> (yes, I chat with ChatGPT! 🤖), following the <strong>crypto</strong> universe and the financial market, or taking courses in my field. 📚',
+        'career-description': 'Hello! I am a <strong>Software Developer</strong> with over <strong>17 years</strong> of journey in the technology world, passionate about <strong>innovation</strong> and driven by a constant curiosity for new tools and challenges. My career has been built on a solid foundation in <strong>Java development</strong>, complemented in recent years by the exciting field of <strong>mobile development</strong>. 💻<br><br>With extensive experience in the Java ecosystem (<strong>JPA, EJB, JSF/Primefaces, JAX-RS, JAX-WS</strong>...) and tools such as <strong>Oracle DB, Weblogic, and Git</strong>, I have participated in the creation of various types of systems: from complex fiscal integrations (<strong>NF-e, CT-e, MDF-e</strong>) via Webservices (<strong>SOAP/REST</strong>), to corporate systems and <strong>BI</strong> tools. 🚀<br><br>For <strong>5 years</strong>, I have immersed myself in mobile development, working with <strong>Native Android (Java)</strong> and, more recently, with <strong>Flutter</strong>, to create cross-platform applications (<strong>iOS/Android</strong>). 📱<br><br>I am <strong>Graduated in Information Systems</strong>, have <strong>two Java certifications</strong>, and I am always learning – whether exploring the latest in <strong>AI</strong> (yes, I chat with ChatGPT! 🤖), following the <strong>crypto</strong> universe and the financial market, or taking courses in my field. 📚',
         'career-description-2': 'Below you will find more details about my <strong>professional journey</strong> and the technologies that are part of my daily life as a developer. Get ready to learn a bit more about my adventures in the world of software development! 💻',
         'career-stats-1': 'Years in IT',
         'career-stats-2': 'Years developing systems',
@@ -176,7 +176,7 @@ const translations = {
         'career-web-title': 'Java Development',
         'career-web-desc': 'Expert in Java development, with extensive experience in frameworks such as EJB, JPA, JSF, Primefaces, JAX-RS, JAX-WS, Spring, Struts, JSP, JDBC and Servlets.',
         'career-mobile-title': 'Mobile Development',
-        'career-mobile-desc': 'Expert in native Android app development with Java and cross-platform applications (Android / iOS) with Flutter.',
+        'career-mobile-desc': 'Expert in native Android app development (Java) and cross-platform applications (Android / iOS) with Flutter.',
         'career-db-title': 'Database & Backend',
         'career-db-desc': 'Deep knowledge in Oracle Database, JPA, EJB and integration with various systems through SOAP/REST webservices. Experience with reporting tools like iReport.',
         'career-devops-title': 'DevOps & Tools',
@@ -208,11 +208,11 @@ const translations = {
         
         // Skills Section
         'skills-title': 'Technologies',
-        'skills-description': 'With over <strong>14 years of experience</strong> in development, I master a wide range of technologies and tools. My expertise ranges from <strong>backend development</strong> with Java and its frameworks to <strong>mobile development</strong> with Android and Flutter, through <strong>databases</strong>, <strong>DevOps</strong> and <strong>integrations</strong>. This diverse set of skills allows me to create complete and robust solutions.',
+        'skills-description': 'With over <strong>17 years of experience</strong> in development, I master a wide range of technologies and tools. My expertise ranges from <strong>backend development</strong> with Java and its frameworks to <strong>mobile development</strong> with Android and Flutter, through <strong>databases</strong>, <strong>DevOps</strong> and <strong>integrations</strong>. This diverse set of skills allows me to create complete and robust solutions.',
         
         // Projects Section
         'projects-title': 'Projects',
-        'projects-description': 'During my <strong>14+ years as a developer</strong>, I had the opportunity to lead and contribute to several significant projects. Here are some of the most relevant ones, demonstrating my experience in creating innovative and impactful solutions.',
+        'projects-description': 'During my <strong>17+ years as a developer</strong>, I had the opportunity to lead and contribute to several significant projects. Here are some of the most relevant ones, demonstrating my experience in creating innovative and impactful solutions.',
         
         // Open Source Section
         'opensource-title': 'Open Source',
