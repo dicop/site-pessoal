@@ -42,7 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'project-8-title': 'img/app-conferencia.jpg', // Imagem local para o projeto App conferência
         'project-2-title': 'img/app-gestao-logistica.jpg', // Imagem local para o projeto App gestão logística
         'project-9-title': 'img/app-empresarial.jpg', // Imagem local para o projeto App empresarial
-        'opensource-project-1-title': 'img/smartwatch.jpg', // Imagem local para o projeto Wear OS
+        'opensource-project-1-title': 'img/smartwatch.jpg', // Imagem local para o projeto Gerenciador Tarefas
+        'opensource-project-2-title': 'img/site-pessoal.jpg', // Imagem local para o projeto Site pessoal
+        'opensource-project-3-title': 'img/bitcoin.jpg', // Imagem local para o projeto Sistema Cripto
     };
     
     // Função para configurar a imagem de perfil local
