@@ -60,10 +60,10 @@ const translations = {
         'opensource-description': 'Esta seção apresenta uma seleção dos meus <strong>projetos de código aberto</strong>, permitindo uma análise mais profunda do meu trabalho como desenvolvedor. Aqui você pode explorar o código fonte, avaliar as <strong>práticas de programação</strong> e as tecnologias utilizadas em cada projeto, demonstrando meu compromisso com a <strong>qualidade</strong> e a <strong>inovação</strong> no desenvolvimento de software.',
         
         // Open Source Projects
-        'opensource-project-1-title': 'Biblioteca de Componentes',
-        'opensource-project-1-desc': 'Conjunto de componentes reutilizáveis para desenvolvimento web com foco em acessibilidade e performance.',
+        'opensource-project-1-title': 'Wear OS',
+        'opensource-project-1-desc': 'Aplicativo gerenciador de tarefas, para rodar em smartwatch com Wear OS. Objetivo do projeto foi validar o uso do flutter para desenvolver aplicativos para a plataforma Wear OS. App conta com armazenamento local, envio de notificações, troca de tema e multi idioma.',
         'opensource-view-source': 'Ver código fonte',
-        'opensource-project-2-title': 'CLI para DevOps',
+        'opensource-project-2-title': 'Site pessoal',
         'opensource-project-2-desc': 'Ferramenta de linha de comando para automatizar tarefas comuns de DevOps e deploy de aplicações.',
         'opensource-project-3-title': 'Framework MVC',
         'opensource-project-3-desc': 'Framework MVC leve e modular para desenvolvimento rápido de aplicações web em Java.',
@@ -106,10 +106,10 @@ const translations = {
         'project-6-desc': 'Sistema web intuitivo que permite ao usuário criar relatórios personalizados, em poucos minutos, a partir de consultas SQL, sem necessidade de programação. O foco é a produtividade, flexibilidade, simplicidade e integração com múltiplos formatos de exportação.',
         'project-7-title': 'BI',
         'project-7-desc': 'Sistema web intuitivo que permite ao usuário, mesmo sem habilidades avançadas em SQL, construir indicadores de desempenho personalizados em minutos, combinando flexibilidade técnica e simplicidade operacional. Apresentando dados em formato tabular e gráficos dinâmicos.',
-        'project-8-title': 'BI',
-        'project-8-desc': 'Aplicativo para monitoramento de saúde com integração a dispositivos wearables e recomendações personalizadas.',
-        'project-9-title': 'App Conferência',
-        'project-9-desc': 'Aplicativo Android para conferência de mercadorias, utilizado em operações logísticas, através da leitura de código de barras dos volumes, visando garantir que toda mercadoria transportada seja de fato entregue ao destinatário.',
+        'project-8-title': 'App Conferência',
+        'project-8-desc': 'Aplicativo Android para conferência de mercadorias, utilizado em operações logísticas, através da leitura de código de barras dos volumes, visando garantir que toda mercadoria transportada seja de fato entregue ao destinatário.',
+        'project-9-title': 'Aplicativo empresarial',
+        'project-9-desc': 'Aplicativo empresarial Android/IOS, possuindo arquitetura própria, permitindo que novos módulos possam ser adicionados com facilidade a medida que o negócio precisar. Possui controle de acesso onde as transações e empresas são liberadas de acordo com o perfil do usuário.',
         
         // Technology Cards
         'tech-java-desc': 'Desenvolvimento backend e Android',
@@ -195,10 +195,10 @@ const translations = {
         'opensource-description': 'This section presents a selection of my <strong>open source projects</strong>, allowing a deeper analysis of my work as a developer. Here you can explore the source code, evaluate the <strong>programming practices</strong> and technologies used in each project, demonstrating my commitment to <strong>quality</strong> and <strong>innovation</strong> in software development.',
         
         // Open Source Projects
-        'opensource-project-1-title': 'Component Library',
-        'opensource-project-1-desc': 'Set of reusable components for web development with focus on accessibility and performance.',
+        'opensource-project-1-title': 'Wear OS',
+        'opensource-project-1-desc': 'Task management application for Wear OS smartwatches. The project aimed to validate the use of Flutter for developing applications for the Wear OS platform. The app features local storage, notifications, theme switching, and multi-language support.',
         'opensource-view-source': 'View source code',
-        'opensource-project-2-title': 'DevOps CLI',
+        'opensource-project-2-title': 'Personal website',
         'opensource-project-2-desc': 'Command line tool to automate common DevOps tasks and application deployment.',
         'opensource-project-3-title': 'MVC Framework',
         'opensource-project-3-desc': 'Light and modular MVC framework for rapid development of web applications in Java.',
@@ -241,10 +241,10 @@ const translations = {
         'project-6-desc': 'Intuitive web system that allows users to create custom reports in minutes from SQL queries, without requiring programming. The focus is on productivity, flexibility, simplicity, and integration with multiple export formats.',
         'project-7-title': 'BI',
         'project-7-desc': 'Intuitive web system that allows users, even without advanced SQL skills, to build custom performance indicators in minutes, combining technical flexibility and operational simplicity. Presenting data in tabular format and dynamic graphs.',
-        'project-8-title': 'Health App',
-        'project-8-desc': 'Application for health monitoring with integration to wearable devices and personalized recommendations.',
-        'project-9-title': 'Conference App',
-        'project-9-desc': 'Android application for merchandise verification, used in logistics operations, through barcode scanning of packages, aiming to ensure that all transported goods are actually delivered to the recipient.',
+        'project-8-title': 'Conference App',
+        'project-8-desc': 'Android application for merchandise verification, used in logistics operations, through barcode scanning of packages, aiming to ensure that all transported goods are actually delivered to the recipient.',
+        'project-9-title': 'Enterprise Application',
+        'project-9-desc': 'Enterprise Android/iOS application with its own architecture, allowing new modules to be easily added as the business requires. It has access control where transactions and companies are released according to the user profile.',
         
         // Technology Cards
         'tech-java-desc': 'Backend and Android development',
