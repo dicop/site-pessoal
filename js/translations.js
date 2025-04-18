@@ -169,7 +169,7 @@ const translations = {
         'career-description-2': 'Below you will find more details about my <strong>professional journey</strong> and the technologies that are part of my daily life as a developer. Get ready to learn a bit more about my adventures in the world of software development! 💻',
         'career-stats-1': 'Years in IT',
         'career-stats-2': 'Years developing systems',
-        'career-stats-3': 'Curso Superior em Sistemas de Informação',
+        'career-stats-3': 'Bachelor\'s Degree in Information Systems',
         'career-stats-4': 'Oracle / Java Certifications',
         
         // Career Highlights

@@ -728,6 +728,63 @@ h2 {
     resize: vertical;
 }
 
+.form-message {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: 500;
+    display: none;
+    position: relative;
+    padding-left: 50px;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form-message::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+}
+
+.form-message.success {
+    display: block;
+    background-color: #d1fae5;
+    color: #065f46;
+    border: 1px solid #a7f3d0;
+}
+
+.form-message.success::before {
+    content: "\f00c";
+    color: #059669;
+}
+
+.form-message.error {
+    display: block;
+    background-color: #fee2e2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+}
+
+.form-message.error::before {
+    content: "\f00d";
+    color: #dc2626;
+}
+
 /* Footer */
 footer {
     padding: 3rem 0;
