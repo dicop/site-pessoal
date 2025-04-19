@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const navMenu = document.querySelector('.nav-menu');
     const menuLinks = document.querySelectorAll('.nav-menu a');
 
-    // Toggle menu
+    // Alternar menu
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
         menuToggle.setAttribute('aria-expanded', 
@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     });
 
-    // Close menu when clicking outside
+    // Fechar menu ao clicar fora
     document.addEventListener('click', (e) => {
         if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
             navMenu.classList.remove('active');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Close menu when clicking on a link
+    // Fechar menu ao clicar em um link
     menuLinks.forEach(link => {
         link.addEventListener('click', () => {
             navMenu.classList.remove('active');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Update menu visibility on resize
+    // Atualizar visibilidade do menu ao redimensionar
     let resizeTimer;
     window.addEventListener('resize', () => {
         clearTimeout(resizeTimer);

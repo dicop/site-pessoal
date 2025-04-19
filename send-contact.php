@@ -1,15 +1,15 @@
 <?php
 header('Content-Type: application/json');
 
-// Get the language from the request
+// Obter o idioma da requisição
 $lang = isset($_POST['lang']) ? $_POST['lang'] : 'pt-BR';
 
-// Get form data
+// Obter dados do formulário
 $name = isset($_POST['name']) ? strip_tags($_POST['name']) : '';
 $email = isset($_POST['email']) ? strip_tags($_POST['email']) : '';
 $message = isset($_POST['message']) ? strip_tags($_POST['message']) : '';
 
-// Validate inputs
+// Validar entradas
 if (empty($name) || empty($email) || empty($message)) {
     echo json_encode([
         'success' => false,
@@ -26,17 +26,17 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
     exit;
 }
 
-// Email headers
+// Cabeçalhos do email
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-// Email subject
+// Assunto do email
 $subject = $lang === 'pt-BR' ? 'Nova mensagem do site - ' : 'New message from website - ';
 $subject .= $name;
 
-// Email body
+// Corpo do email
 $body = "
 <html>
 <body>
@@ -49,7 +49,7 @@ $body = "
 </html>
 ";
 
-// Send email
+// Enviar email
 $to = 'contato@dicop.com.br';
 $mailSent = mail($to, $subject, $body, $headers);
 
