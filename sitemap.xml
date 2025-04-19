@@ -10,7 +10,7 @@
   <!-- Página inicial -->
   <url>
     <loc>https://dicop.com.br/</loc>
-    <lastmod>2024-04-19</lastmod>
+    <lastmod>2025-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -22,7 +22,7 @@
   <!-- Seção Sobre -->
   <url>
     <loc>https://dicop.com.br/#sobre</loc>
-    <lastmod>2024-04-19</lastmod>
+    <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -30,7 +30,7 @@
   <!-- Seção Habilidades -->
   <url>
     <loc>https://dicop.com.br/#habilidades</loc>
-    <lastmod>2024-04-19</lastmod>
+    <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -38,7 +38,7 @@
   <!-- Seção Projetos -->
   <url>
     <loc>https://dicop.com.br/#projetos</loc>
-    <lastmod>2024-04-19</lastmod>
+    <lastmod>2025-04-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -46,7 +46,7 @@
   <!-- Seção Contato -->
   <url>
     <loc>https://dicop.com.br/#contato</loc>
-    <lastmod>2024-04-19</lastmod>
+    <lastmod>2025-04-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
