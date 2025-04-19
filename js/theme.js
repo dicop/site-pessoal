@@ -1,22 +1,22 @@
-// Get DOM elements
+// recuperar DOM elements
 const themeToggle = document.getElementById('themeToggle');
 const langToggle = document.getElementById('langToggle');
 const icon = themeToggle.querySelector('i');
 
-// Update copyright year
+// atualizar ano copyright
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Initialize theme
+// inicializar tema
 const theme = localStorage.getItem('theme') || 'dark';
 document.documentElement.setAttribute('data-theme', theme);
 updateIcon(theme);
 
-// Initialize language
+// inicializar idioma
 const currentLang = localStorage.getItem('lang') || 'pt-BR';
 document.documentElement.setAttribute('lang', currentLang);
 updateLanguage(currentLang);
 
-// Theme toggle event listener
+// adicionando listener de troca de tema
 themeToggle.addEventListener('click', () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
@@ -26,7 +26,7 @@ themeToggle.addEventListener('click', () => {
     updateIcon(newTheme);
 });
 
-// Language toggle event listener
+// adicionando listener de troca de idioma
 langToggle.addEventListener('click', () => {
     const currentLang = document.documentElement.getAttribute('lang');
     const newLang = currentLang === 'pt-BR' ? 'en' : 'pt-BR';
