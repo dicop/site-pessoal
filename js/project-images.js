@@ -13,16 +13,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'project-7-title': 'img/projects/bi.jpg',
         'project-8-title': 'img/projects/app-conferencia.jpg',
         'project-9-title': 'img/projects/app-empresarial.jpg',
-        'project-10-title': 'img/projects/app-empresarial.jpg',
         'opensource-project-1-title': 'img/projects/smartwatch.jpg',
-        'opensource-project-2-title': 'img/projects/site-pessoal.jpg',
-        'opensource-project-3-title': 'img/projects/bitcoin.jpg',
-        'opensource-project-4-title': 'img/projects/vscode-plugin.jpg',
-        'opensource-project-5-title': 'img/projects/api-generator.jpg',
-        'opensource-project-6-title': 'img/projects/flutter-widgets.jpg',
-        'opensource-project-7-title': 'img/projects/orm-database.jpg',
-        'opensource-project-8-title': 'img/projects/android-template.jpg',
-        'opensource-project-9-title': 'img/projects/logging-system.jpg'
+        'opensource-project-2-title': 'img/projects/bitcoin.jpg',
+        'opensource-project-3-title': 'img/projects/site-pessoal.jpg'
     };
     
     // Função para configurar a imagem de perfil local

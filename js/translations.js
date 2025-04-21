@@ -1,6 +1,5 @@
 const translations = {
     'pt-BR': {
-        // Navbar
         'nav-home': 'Home',
         'nav-about': 'Sobre',
         'nav-skills': 'Tecnologias',
@@ -8,7 +7,6 @@ const translations = {
         'nav-opensource': 'Código Livre',
         'nav-contact': 'Contato',
         
-        // Hero Section
         'hero-subtitle': 'Desenvolvedor Java e Mobile',
         'hero-title-1': 'Olá, eu sou',
         'hero-title-2': 'Diogo Copat',
@@ -16,7 +14,6 @@ const translations = {
         'hero-btn-projects': 'Ver Projetos',
         'hero-btn-contact': 'Contato',
         
-        // Career Section
         'career-title': 'Sobre',
         'career-description': 'Olá! Sou um <strong>Desenvolvedor de Software</strong> com mais de <strong>17 anos</strong> de jornada no mundo da tecnologia, apaixonado por <strong>inovação</strong> e movido por uma curiosidade constante por novas ferramentas e desafios. Minha carreira foi construída sobre uma base sólida em <strong>desenvolvimento Java</strong>, complementada nos últimos anos pela empolgante área de <strong>desenvolvimento mobile</strong>. 💻<br><br>Com vasta experiência no ecossistema Java (<strong>JPA, EJB, JSF/Primefaces, JAX-RS, JAX-WS</strong>...) e ferramentas como <strong>Oracle DB, Weblogic e Git</strong>, participei da criação de diversos tipos de sistemas: desde complexas integrações fiscais (<strong>NF-e, CT-e, MDF-e</strong>) via Webservices (<strong>SOAP/REST</strong>), até sistemas corporativos e ferramentas de <strong>BI</strong>. 🚀<br><br>Há <strong>5 anos</strong>, mergulhei no desenvolvimento mobile, trabalhando com <strong>Android Nativo (Java)</strong> e, mais recentemente, com <strong>Flutter</strong>, para criar aplicações multiplataforma (<strong>iOS/Android</strong>). 📱<br><br>Sou <strong>Graduado em Sistemas de Informação</strong>, possuo <strong>duas certificações Java</strong> e estou sempre aprendendo – seja explorando as novidades em <strong>IA</strong> (sim, converso com o ChatGPT! 🤖), acompanhando o universo <strong>cripto</strong> e o mercado financeiro, ou fazendo cursos na minha área. 📚',
         'career-description-2': 'Logo abaixo você encontrará mais detalhes sobre minha <strong>trajetória profissional</strong> e as tecnologias que fazem parte do meu dia a dia como desenvolvedor. Prepare-se para conhecer um pouco mais sobre minhas aventuras no mundo do desenvolvimento de software! 💻',
@@ -25,7 +22,6 @@ const translations = {
         'career-stats-3': 'Curso Superior em Sistemas de Informação',
         'career-stats-4': 'Certificações Oracle / Java',
         
-        // Career Highlights
         'career-web-title': 'Desenvolvimento Java',
         'career-web-desc': 'Especialista em desenvolvimento Java, com ampla experiência em frameworks como EJB, JPA, JSF, Primefaces, JAX-RS, JAX-WS, Spring, Struts, JSP, JDBC e Servlets.',
         'career-mobile-title': 'Desenvolvimento Mobile',
@@ -35,7 +31,6 @@ const translations = {
         'career-devops-title': 'DevOps & Ferramentas',
         'career-devops-desc': 'Profundo conhecimento em banco de dados Oracle, larga experiência com servidor de aplicação Weblogic, Oracle HTTP Server, integração contínua com Jenkins e controle de versão usando GIT.',
         
-        // Career Timeline
         'career-timeline-title': 'Trajetória Profissional',
         'career-timeline-1-date': 'Certificação',
         'career-timeline-1-title': 'Oracle Java SE 7',
@@ -59,40 +54,23 @@ const translations = {
         'career-timeline-7-title': 'Designer Gráfico - Zero Hora Editora Jornalística SA',
         'career-timeline-7-desc': 'Designer Gráfico, atuando na criação / edição de anúncios para o Jornal Pioneiro.',
         
-        // Skills Section
         'skills-title': 'Tecnologias',
         'skills-description': 'Com mais de <strong>17 anos de experiência</strong> em desenvolvimento, domino um amplo conjunto de tecnologias e ferramentas. Minha expertise abrange desde <strong>desenvolvimento backend</strong> com Java e seus frameworks até <strong>desenvolvimento mobile</strong> com Android e Flutter, passando por <strong>bancos de dados</strong>, <strong>DevOps</strong> e <strong>integrações</strong>. Este conjunto diversificado de habilidades me permite criar soluções completas e robustas.',
         
-        // Projects Section
         'projects-title': 'Projetos',
         'projects-description': 'Durante minha trajetória de <strong>17+ anos como desenvolvedor</strong>, tive a oportunidade de liderar e contribuir com diversos projetos significativos. Aqui estão alguns dos mais relevantes, demonstrando minha experiência em criar soluções inovadoras e impactantes.',
         
-        // Open Source Section
         'opensource-title': 'Código livre',
         'opensource-description': 'Esta seção apresenta uma seleção dos meus <strong>projetos de código aberto</strong>, permitindo uma análise mais profunda do meu trabalho como desenvolvedor. Aqui você pode explorar o código fonte, avaliar as <strong>práticas de programação</strong> e as tecnologias utilizadas em cada projeto, demonstrando meu compromisso com a <strong>qualidade</strong> e a <strong>inovação</strong> no desenvolvimento de software.',
         
-        // Open Source Projects
         'opensource-project-1-title': 'Gerenciador Tarefas',
         'opensource-project-1-desc': 'Aplicativo gerenciador de tarefas, para rodar em smartwatch com Wear OS. Objetivo do projeto foi validar o uso do flutter para desenvolver aplicativos para a plataforma Wear OS. App conta com armazenamento local, envio de notificações, troca de tema e multi idioma.',
         'opensource-view-source': 'Ver código fonte',
-        'opensource-project-2-title': 'Site pessoal',
-        'opensource-project-2-desc': 'Site pessoal para apresentação de meu perfil profissional. Desenvolvido usando javascript, html e css, com o objetivo de ser um site simples, de layout limpo, multi idioma e responsivo.',
-        'opensource-project-3-title': 'Sistema Cripto',
-        'opensource-project-3-desc': 'Sistema para negociações de criptomoedas, monitora as condições de mercado e envia alertas via Telegram. Sistema conta com integração via API com exchanges centralizadas e busca dados em exchanges descentralizadas através do uso de Web Scraping.',
-        'opensource-project-4-title': 'Plugin VSCode',
-        'opensource-project-4-desc': 'Extensão para VSCode que adiciona suporte a preview em tempo real para documentação técnica.',
-        'opensource-project-5-title': 'Gerador de API',
-        'opensource-project-5-desc': 'Ferramenta que gera código boilerplate para APIs RESTful baseado em especificações OpenAPI.',
-        'opensource-project-6-title': 'Widget Flutter',
-        'opensource-project-6-desc': 'Biblioteca de widgets personalizados para Flutter com temas dinâmicos e animações fluidas.',
-        'opensource-project-7-title': 'ORM Java',
-        'opensource-project-7-desc': 'ORM leve e flexível para Java com suporte a múltiplos bancos de dados e cache em memória.',
-        'opensource-project-8-title': 'Template Android',
-        'opensource-project-8-desc': 'Template para projetos Android com arquitetura MVVM, injeção de dependência e testes automatizados.',
-        'opensource-project-9-title': 'Logger Distribuído',
-        'opensource-project-9-desc': 'Sistema de logging distribuído com agregação em tempo real e dashboard de monitoramento.',
-        
-        // Contact Section
+        'opensource-project-2-title': 'Cripto Trader',
+        'opensource-project-2-desc': 'Sistema para negociação automatizada de criptomoedas. Sistema conta com integração via API com exchanges centralizadas, rotinas rodando periodicamente para efetuar as negociações de forma automática e painel web para gerenciar e acompanhar as operações.',
+        'opensource-project-3-title': 'Site pessoal',
+        'opensource-project-3-desc': 'Site pessoal para apresentação de meu perfil profissional. Desenvolvido usando javascript, html e css, com o objetivo de ser um site simples, de layout limpo, multi idioma e responsivo.',
+
         'contact-title': 'Contato',
         'contact-description': 'Interessado em discutir um projeto ou saber mais sobre meu trabalho? Você pode entrar em contato através do <strong>formulário abaixo</strong> ou me encontrar nas <strong>redes sociais</strong> indicadas no rodapé.',
         'contact-name': 'Nome',
@@ -100,10 +78,8 @@ const translations = {
         'contact-message': 'Mensagem',
         'contact-btn-send': 'Enviar',
         
-        // Footer
         'footer-rights': 'Todos os direitos reservados',
         
-        // Project Cards
         'project-1-title': 'Sistema Empresarial',
         'project-1-desc': 'Sistema completo de gestão empresarial e logística, atendendo diferentes setores do negócio. Arquitetura robusta e própria, para permitir o crescimento do sistema de forma sustentável e flexível.',
         'project-2-title': 'App Gestão Logística',
@@ -123,7 +99,6 @@ const translations = {
         'project-9-title': 'Aplicativo empresarial',
         'project-9-desc': 'Aplicativo empresarial Android/IOS, possuindo arquitetura própria, permitindo que novos módulos possam ser adicionados com facilidade a medida que o negócio precisar. Possui controle de acesso onde as transações e empresas são liberadas de acordo com o perfil do usuário.',
         
-        // Technology Cards
         'tech-java-desc': 'Desenvolvimento backend e Android',
         'tech-spring-desc': 'Framework web e microsserviços',
         'tech-jsp-desc': 'Aplicações web Java',
@@ -147,7 +122,6 @@ const translations = {
         'tech-flutter-desc': 'Apps multiplataforma'
     },
     'en': {
-        // Navbar
         'nav-home': 'Home',
         'nav-about': 'About',
         'nav-skills': 'Technologies',
@@ -155,7 +129,6 @@ const translations = {
         'nav-opensource': 'Open Source',
         'nav-contact': 'Contact',
         
-        // Hero Section
         'hero-subtitle': 'Java and Mobile Developer',
         'hero-title-1': 'Hi, I am',
         'hero-title-2': 'Diogo Copat',
@@ -163,7 +136,6 @@ const translations = {
         'hero-btn-projects': 'View Projects',
         'hero-btn-contact': 'Contact',
         
-        // Career Section
         'career-title': 'About',
         'career-description': 'Hello! I am a <strong>Software Developer</strong> with over <strong>17 years</strong> of journey in the technology world, passionate about <strong>innovation</strong> and driven by a constant curiosity for new tools and challenges. My career has been built on a solid foundation in <strong>Java development</strong>, complemented in recent years by the exciting field of <strong>mobile development</strong>. 💻<br><br>With extensive experience in the Java ecosystem (<strong>JPA, EJB, JSF/Primefaces, JAX-RS, JAX-WS</strong>...) and tools such as <strong>Oracle DB, Weblogic, and Git</strong>, I have participated in the creation of various types of systems: from complex fiscal integrations (<strong>NF-e, CT-e, MDF-e</strong>) via Webservices (<strong>SOAP/REST</strong>), to corporate systems and <strong>BI</strong> tools. 🚀<br><br>For <strong>5 years</strong>, I have immersed myself in mobile development, working with <strong>Native Android (Java)</strong> and, more recently, with <strong>Flutter</strong>, to create cross-platform applications (<strong>iOS/Android</strong>). 📱<br><br>I am <strong>Graduated in Information Systems</strong>, have <strong>two Java certifications</strong>, and I am always learning – whether exploring the latest in <strong>AI</strong> (yes, I chat with ChatGPT! 🤖), following the <strong>crypto</strong> universe and the financial market, or taking courses in my field. 📚',
         'career-description-2': 'Below you will find more details about my <strong>professional journey</strong> and the technologies that are part of my daily life as a developer. Get ready to learn a bit more about my adventures in the world of software development! 💻',
@@ -172,7 +144,6 @@ const translations = {
         'career-stats-3': 'Bachelor\'s Degree in Information Systems',
         'career-stats-4': 'Oracle / Java Certifications',
         
-        // Career Highlights
         'career-web-title': 'Java Development',
         'career-web-desc': 'Expert in Java development, with extensive experience in frameworks such as EJB, JPA, JSF, Primefaces, JAX-RS, JAX-WS, Spring, Struts, JSP, JDBC and Servlets.',
         'career-mobile-title': 'Mobile Development',
@@ -182,7 +153,6 @@ const translations = {
         'career-devops-title': 'DevOps & Tools',
         'career-devops-desc': 'Deep knowledge in Oracle database, extensive experience with Weblogic application server, Oracle HTTP Server, continuous integration with Jenkins and version control using GIT.',
         
-        // Career Timeline
         'career-timeline-title': 'Professional Journey',
         'career-timeline-1-date': 'Certification',
         'career-timeline-1-title': 'Oracle Java SE 7',
@@ -206,40 +176,23 @@ const translations = {
         'career-timeline-7-title': 'Graphic Designer - Zero Hora Editora Jornalística SA',
         'career-timeline-7-desc': 'Graphic Designer, working on creation / editing of advertisements for Jornal Pioneiro.',
         
-        // Skills Section
         'skills-title': 'Technologies',
         'skills-description': 'With over <strong>17 years of experience</strong> in development, I master a wide range of technologies and tools. My expertise ranges from <strong>backend development</strong> with Java and its frameworks to <strong>mobile development</strong> with Android and Flutter, through <strong>databases</strong>, <strong>DevOps</strong> and <strong>integrations</strong>. This diverse set of skills allows me to create complete and robust solutions.',
         
-        // Projects Section
         'projects-title': 'Projects',
         'projects-description': 'During my <strong>17+ years as a developer</strong>, I had the opportunity to lead and contribute to several significant projects. Here are some of the most relevant ones, demonstrating my experience in creating innovative and impactful solutions.',
         
-        // Open Source Section
         'opensource-title': 'Open Source',
         'opensource-description': 'This section presents a selection of my <strong>open source projects</strong>, allowing a deeper analysis of my work as a developer. Here you can explore the source code, evaluate the <strong>programming practices</strong> and technologies used in each project, demonstrating my commitment to <strong>quality</strong> and <strong>innovation</strong> in software development.',
         
-        // Open Source Projects
         'opensource-project-1-title': 'Task Manager',
         'opensource-project-1-desc': 'Task management application for Wear OS smartwatches. The project aimed to validate the use of Flutter for developing applications for the Wear OS platform. The app features local storage, notifications, theme switching, and multi-language support.',
         'opensource-view-source': 'View source code',
-        'opensource-project-2-title': 'Personal website',
-        'opensource-project-2-desc': 'Personal website to showcase my professional profile. Developed using javascript, html and css, with the aim of being a simple site, with a clean layout, multi-language and responsive.',
-        'opensource-project-3-title': 'Crypto System',
-        'opensource-project-3-desc': 'System for cryptocurrency trading, monitors market conditions and sends alerts via Telegram. The system has API integration with centralized exchanges and fetches data from decentralized exchanges using Web Scraping.',
-        'opensource-project-4-title': 'VSCode Plugin',
-        'opensource-project-4-desc': 'VSCode extension that adds real-time preview support for technical documentation.',
-        'opensource-project-5-title': 'API Generator',
-        'opensource-project-5-desc': 'Tool that generates boilerplate code for RESTful APIs based on OpenAPI specifications.',
-        'opensource-project-6-title': 'Flutter Widget',
-        'opensource-project-6-desc': 'Library of custom widgets for Flutter with dynamic themes and fluid animations.',
-        'opensource-project-7-title': 'Java ORM',
-        'opensource-project-7-desc': 'Light and flexible ORM for Java with support for multiple databases and in-memory cache.',
-        'opensource-project-8-title': 'Android Template',
-        'opensource-project-8-desc': 'Template for Android projects with MVVM architecture, dependency injection and automated tests.',
-        'opensource-project-9-title': 'Distributed Logger',
-        'opensource-project-9-desc': 'Distributed logging system with real-time aggregation and monitoring dashboard.',
+        'opensource-project-2-title': 'Crypto Trader',
+        'opensource-project-2-desc': 'System for automated cryptocurrency trading. The system has API integration with centralized exchanges, periodic routines to perform automated trades and a web panel to manage and monitor operations.',
+        'opensource-project-3-title': 'Personal website',
+        'opensource-project-3-desc': 'Personal website to showcase my professional profile. Developed using javascript, html and css, with the aim of being a simple site, with a clean layout, multi-language and responsive.',
         
-        // Contact Section
         'contact-title': 'Contact',
         'contact-description': 'Interested in discussing a project or learning more about my work? You can get in touch through the <strong>form below</strong> or find me on the <strong>social networks</strong> indicated in the footer.',
         'contact-name': 'Name',
@@ -247,10 +200,8 @@ const translations = {
         'contact-message': 'Message',
         'contact-btn-send': 'Send',
         
-        // Footer
         'footer-rights': 'All rights reserved',
         
-        // Project Cards
         'project-1-title': 'Enterprise System',
         'project-1-desc': 'Complete enterprise management and logistics system, serving different business sectors. Robust and proprietary architecture to enable sustainable and flexible system growth.',
         'project-2-title': 'Logistics Management App',
@@ -270,7 +221,6 @@ const translations = {
         'project-9-title': 'Enterprise Application',
         'project-9-desc': 'Enterprise Android/iOS application with its own architecture, allowing new modules to be easily added as the business requires. It has access control where transactions and companies are released according to the user profile.',
         
-        // Technology Cards
         'tech-java-desc': 'Backend and Android development',
         'tech-spring-desc': 'Web framework and microservices',
         'tech-jsp-desc': 'Java web applications',
